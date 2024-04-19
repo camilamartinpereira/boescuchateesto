@@ -14,82 +14,107 @@
     <!-- HEADER --> 
 
     <header>
-        <nav class="navbar bg-violeta navbar-expand-md" >
-            <div class="container-fluid">
-                <a href="../index.html">
-                    <img src="../images/logo.png" alt="logo que dice bo escuchate esto">
-                </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header bg-violeta">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Bo! Escuchate Esto</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body bg-violeta">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link fw-bold" aria-current="page" href="../index.html" >Inicio</a>
+      <nav class="navbar bg-violeta navbar-expand-md" >
+          <div class="container-fluid">
+              <a href="../index.html">
+                  <img src="../images/logo.png" alt="logo que dice bo escuchate esto">
+              </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header bg-violeta">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Bo! Escuchate Esto</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body bg-violeta">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link fw-bold" aria-current="page" href="../index.html" >Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fw-bold" href="galeria.html">Galeria</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link fw-bold" href="menu-notes.html">Notas</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link fw-bold" href="agenda.html">Agenda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link fw-bold" href="menu-notes.html">Notas</a>
-                      </li>
-                  </ul>
-                  <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-                  </form>
-                </div>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                </form>
               </div>
             </div>
-          </nav>
-        
-    </header>
+          </div>
+        </nav>
+      
+  </header>
 
     <!-- MAIN --> 
 
     <main>
-        <div class="notes-body">
-            <h1>Para leer</h1>
-            
-            <div class="notes-menu"></div>
-            <section>
-                <article class="content-menu">
-                    <h2>Explorando los Secretos del Éxito de las Bandas Indie en el Escenario Internacional</h2>
-                    <p>Descubre cómo las bandas independientes, o "indie", han logrado conquistar escenarios internacionales gracias a su autenticidad, independencia y apoyo de una comunidad de seguidores leales. Exploramos cómo estas bandas han utilizado plataformas digitales y redes sociales para llegar a audiencias globales y cómo su enfoque único y su conexión con los fans los han catapultado al éxito en la escena musical internacional.</p>
-                    <a href="nota-1.html">Leer más</a>
-                </article>
-                
-                <article class="content-menu">
-                    <h2>Descubre las Bandas Emergentes que Debes Escuchar Ahora Mismo</h2>
-                    <p>Sumérgete en el mundo de la música emergente y descubre las bandas y artistas más prometedores que están ganando popularidad y cautivando a audiencias de todo el mundo con su talento único y fresco.</p>
-                    <a href="#">Leer más</a>
-                </article>
-                
-                <article class="content-menu">
-                    <h2>Cómo la Tecnología Está Transformando la Experiencia de los Festivales de Música</h2>
-                    <p>Explora cómo la tecnología está cambiando la forma en que vivimos y experimentamos los festivales de música, desde la venta de boletos hasta la producción de espectáculos en vivo, y cómo esto está afectando la industria musical en general.</p>
-                    <a href="#">Leer más</a>
-                </article>
-            </section>
+      <section class="title-all">
+        <div class="title">
+          <h1 class="title-t">Notas</h1>
+          <p class="title-st">Mantenete actualizado</p>
         </div>
-    </main>
-
+        </section>
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-3 g-3">
+              <div class="col">
+                  <div class="card shadow-sm h-100">
+                      <img src="../images/fotografia-notas-uno.jpg" class="card-img-top" alt="banda tocando en vivo">
+                      <div class="card-body d-flex flex-column justify-content-between">
+                          <h2 class="card-title">Explorando los Secretos del Éxito de las Bandas Indie en el Escenario Internacional</h2>
+                          <p class="card-text">Explora cómo la tecnología está cambiando la forma en que vivimos y experimentamos los festivales de música, desde la venta de boletos hasta la producción de espectáculos en vivo, y cómo esto está afectando la industria musical en general.</p>
+                          <div class="text-center">
+                              <a href="../pages/nota-1.html" class="btn btn-primary bg-violeta">Leer más</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card shadow-sm h-100">
+                      <img src="../images/fotografia-notas-dos.jpg" class="card-img-top" alt="mujer cantando en vivo">
+                      <div class="card-body d-flex flex-column justify-content-between">
+                          <h2 class="card-title">Descubriendo el Mundo de la Música Electrónica en la Escena Global</h2>
+                          <p class="card-text">Explora cómo la tecnología está cambiando la forma en que vivimos y experimentamos los festivales de música, desde la venta de boletos hasta la producción de espectáculos en vivo, y cómo esto está afectando la industria musical en general.</p>
+                          <div class="text-center">
+                              <a href="#" class="btn btn-primary bg-violeta">Leer más</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="card shadow-sm h-100">
+                      <img src="../images/fotografia-notas-tres.jpg" class="card-img-top" alt="mujer en estudio de grabacion">
+                      <div class="card-body d-flex flex-column justify-content-between">
+                          <h2 class="card-title">Desentrañando los Misterios del Rock Alternativo en la Escena Mundial</h2>
+                          <p class="card-text">Explora cómo la tecnología está cambiando la forma en que vivimos y experimentamos los festivales de música, desde la venta de boletos hasta la producción de espectáculos en vivo, y cómo esto está afectando la industria musical en general.</p>
+                          <div class="text-center">
+                              <a href="#" class="btn btn-primary bg-violeta">Leer más</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      </main>
+      
+       
     <!-- FOOTER --> 
 
     <footer>
-        <img src="../images/logo.png" alt="logo que dice bo escuchate esto">
-        <nav>
-            <ul>
-                <li><a href="quienes-somos.html">Quienes somos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <p>@boescuchateesto</p>
-            </ul>
-        </nav>
-    </footer>    
+      <img src="../images/logo.png" alt="logo que dice bo escuchate esto">
+      <nav>
+          <ul>
+              <li><a href="quienes-somos.html">Quienes somos</a></li>
+              <li><a href="suscripcion.html">¡SUSCRIBITE!</a></li>
+              <p>@boescuchateesto</p>
+          </ul>
+      </nav>
+  </footer>    
+  
 <!--SCRIPT-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

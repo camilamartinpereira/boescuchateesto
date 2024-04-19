@@ -4,13 +4,56 @@
   background-color: #CEB3F2;
 }
 
-.bg-amarillo{
+
+.card {
+  height: 100%;
+}
+
+.card-title {
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  flex-grow: 1;
+}
+
+.btn.bg-violeta {
+  background-color: #CEB3F2;
+  border-color: #CEB3F2;
+}
+
+rillo{
   background-color: hsl(60, 100%, 84%);
 }
 
+/
 .title-all{
   background-color: hsl(60, 100%, 84%);
   text-align: center;
+  font-size: 7vw;
+}
+
+
+.title {
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-t {
+  font-size: 60px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  align-items: center;
+}
+
+.title-st {
+  font-size: 20px;
+  font-style: italic;
+  color: #666;
+  margin-top: 10px;
 }
 
 
@@ -57,7 +100,9 @@
   padding: 40px;
 }
 
-.hero-section button{
+.hero-section a{
+  text-decoration: none;
+  text-align: center;
   width: 200px;
   height: 50px;
   border-radius: 50px; 
@@ -73,7 +118,7 @@
   transition: background-color 0.5s ease; 
 }
 
-.hero-section button:hover {
+.hero-section a:hover {
   background-color: #CEB3F2; 
   color: black;
 }
@@ -100,7 +145,7 @@
     padding: 40px;
   }
 
-  .hero-section button{
+  .hero-section a{
     align-self: center;
 }
 .hero-section-title{
@@ -111,6 +156,13 @@
 }
 }
 
+/*MENU CARDS*/
+
+.cards-index{
+  height: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px
+}
 
 /*Cards*/
 
@@ -225,27 +277,6 @@
 /*GALLERY*/
 
 
-.title {
-  padding: 30px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.title-t {
-  font-size: 70px;
-  font-weight: bold;
-  color: #333;
-  margin: 0;
-  align-items: center;
-}
-
-.title-st {
-  font-size: 20px;
-  font-style: italic;
-  color: #666;
-  margin-top: 10px;
-}
 
 
 
@@ -302,24 +333,43 @@
 
 
 
-  /*FORM*/
+  /*QUIENES SOMOS*/
+
+  /*SUSCRIBITE*/
+  
+  .suscription-content-title{
+    background-color:  hsl(60, 100%, 84%);
+  }
+  
+  .title-suscripcion{
+    font-size: 6vw;
+    
+  }
+
+
+  
 
   .formulario-contenedor {
     display: flex;
     justify-content: center; 
     align-items: center; 
-    height: 500px;
-    background-color: #FED966;
+    height: 400px;
+    background-color: hsl(60, 100%, 84%);
   }
   
   .form-suscripcion {
     background-color: white;
     display: grid;
     padding: 1em;
-    background: #F2E0C9;
+    background: rgba(206, 147, 240, 0.729);
     max-width: 600px;
     padding: 1em;
     border: none;
+    border-radius: 30px; 
+  }
+
+  .form-suscripcion:hover{
+    background-color:  rgba(184, 126, 217, 0.729);
   }
 
   
@@ -334,14 +384,15 @@
   }
   
   .button-form {
-    background: lightgrey;
+    background: rgb(255, 255, 255);
     padding: 0.7em;
     width: 100%;
-    border: 0;
+    border: 20px;
+    border-radius: 50px; 
   }
   
   .button-form:hover {
-    background: gold;
+    background: rgba(178, 120, 211, 0.729);
   }
   
   .label-form {
@@ -349,7 +400,7 @@
   }
   
   .input-form:focus {
-    outline: 3px solid gold;
+    outline: 3px solid rgb(0, 0, 0);
   }
   
   @media (min-width: 400px) {
@@ -370,7 +421,57 @@
   }
   
 
-/*Footer*/
+/*PLAYLIST*/
+
+.playlist{
+  background-color: #CEB3F2;
+  height: 100%;
+  padding: 60px;
+
+}
+
+.playlist-box{
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+.playlist-title{
+
+  height: 20%;
+  font-size:  50px;
+  padding: 10px;
+  font-weight: bold;
+
+}
+
+.playlist-widget{
+   width: 80%;
+
+
+}
+
+
+
+
+@media (max-width:768px){
+  .playlist-box{
+    display: flex;
+    flex-direction: column;
+  }
+.playlist-widget{
+   width: 100%;
+
+}
+.playlist-title{
+
+  height: 100%;
+  font-size:  50px;
+  padding: 10px;
+  font-weight: bold;
+
+}
+}
+
 
  /*FOOTER*/
 
