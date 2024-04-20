@@ -22,9 +22,6 @@
   border-color: #CEB3F2;
 }
 
-rillo{
-  background-color: hsl(60, 100%, 84%);
-}
 
 .title-all{
   background-color: hsl(60, 100%, 84%);
@@ -224,6 +221,75 @@ rillo{
   }
 }
 
+/*NOTA 1*/
+.entrada-blog {
+  background-color: hsl(60, 100%, 84%);
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+
+  
+}
+
+
+.entrada-blog-container {
+  background-color: #CEB3F2;
+  padding: 20px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  margin-bottom: 0;
+}
+
+.entrada-blog-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.entrada-blog-carrusel-bootstrap {
+  margin-top: 0;
+  margin-bottom: 0; 
+}
+
+.entrada-blog-container p {
+  margin-bottom: 20px;
+}
+
+.entrada-blog-container-abajo {
+  background-color: #CEB3F2;
+  padding: 20px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top: 1px solid #CEB3F2;
+}
+
+.entrada-blog-container-abajo a {
+  display: block;
+  background: rgb(255, 255, 255);
+  padding: 0.7em;
+  width: 10%;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.entrada-blog-container-abajo a:hover {
+  background: rgba(178, 120, 211, 0.729);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .entrada-blog {
+    padding: 20px;
+  }
+  .entrada-blog-container {
+    padding: 15px;
+  }
+  .entrada-blog-title {
+    font-size: 1.5rem;
+  }
+}
 
 /*GALLERY*/
 
@@ -277,90 +343,73 @@ rillo{
 }
 
 
-  /*QUIENES SOMOS*/
 
-  /*SUSCRIBITE*/
-  
-  .suscription-content-title{
-    background-color:  hsl(60, 100%, 84%);
-  }
-  
-  .title-suscripcion{
-    font-size: 6vw;
-    
-  }
+.suscription-content-title {
+  background-color: hsl(60, 100%, 84%);
+  padding: 30px;
+  text-align: center; 
+}
 
-  .formulario-contenedor {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    height: 400px;
-    background-color: hsl(60, 100%, 84%);
-  }
-  
+.title-suscripcion {
+  font-size: 6vw;
+  margin-bottom: 20px; 
+}
+
+.formulario-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(60, 100%, 84%);
+  padding: 20px; 
+}
+
+.form-suscripcion {
+  background-color: rgba(206, 147, 240, 0.729);
+  max-width: 90%; 
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.form-suscripcion:hover {
+  background-color: rgba(184, 126, 217, 0.729);
+}
+
+.input-form {
+  padding: 0.7em;
+  margin-bottom: 0.5rem;
+  width: 100%; 
+}
+
+.button-form {
+  background: rgb(255, 255, 255);
+  padding: 0.7em;
+  width: 100%;
+  border: none;
+  border-radius: 50px;
+  margin-top: 20px; 
+}
+
+.button-form:hover {
+  background: rgba(178, 120, 211, 0.729);
+}
+
+.label-form {
+  padding: 0.5em 0.5em 0.5em 0;
+}
+
+.input-form:focus {
+  outline: 3px solid rgb(0, 0, 0);
+}
+
+@media (min-width: 400px) {
   .form-suscripcion {
-    background-color: white;
-    display: grid;
-    padding: 1em;
-    background: rgba(206, 147, 240, 0.729);
-    max-width: 600px;
-    padding: 1em;
-    border: none;
-    border-radius: 30px; 
+    max-width: 400px; 
   }
 
-  .form-suscripcion:hover{
-    background-color:  rgba(184, 126, 217, 0.729);
+  .title-suscripcion {
+    font-size: 4vw; 
   }
-
-  
-  .input-form {
-    padding: 0.7em;
-    margin-bottom: 0.5rem;
-  }
-  
-  .input-form input {
-    background: #fff;
-    border: 1px solid #9c9c9c;
-  }
-  
-  .button-form {
-    background: rgb(255, 255, 255);
-    padding: 0.7em;
-    width: 100%;
-    border: 20px;
-    border-radius: 50px; 
-  }
-  
-  .button-form:hover {
-    background: rgba(178, 120, 211, 0.729);
-  }
-  
-  .label-form {
-    padding: 0.5em 0.5em 0.5em 0;
-  }
-  
-  .input-form:focus {
-    outline: 3px solid rgb(0, 0, 0);
-  }
-  
-  @media (min-width: 400px) {
-    .form-suscripcion {
-      grid-template-columns: 200px 1fr;
-      grid-gap: 16px;
-    }
-  
-    .label-form {
-      text-align: right;
-      grid-column: 1 / 2;
-    }
-  
-    .input-form,
-    .button-form {
-      grid-column: 2 / 3;
-    }
-  }
-  
+}
 
 /*PLAYLIST*/
 
@@ -410,6 +459,48 @@ rillo{
     margin:0px
   }
 }
+
+/*QUIENES SOMOS*/
+
+
+.quienes-somos {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  background-color: #CEB3F2; 
+}
+
+.contenedor-quienes-somos {
+  text-align: center; 
+  max-width: 80%; 
+  padding: 30px; 
+  background-color:#F2E0C9;
+  border-radius: 10px; 
+}
+
+.quienes-somos-title {
+  font-size: 2rem; 
+  margin-bottom: 20px; 
+}
+
+.quienes-somos-texto {
+  margin-bottom: 20px; 
+}
+
+@media (max-width: 768px) {
+  .quienes-somos {
+    height: auto; 
+    padding: 20px; 
+  }
+
+  .contenedor-quienes-somos {
+    max-width: 90%; /* Ancho máximo del contenedor */
+  }
+}
+
+
+
 
 
 
