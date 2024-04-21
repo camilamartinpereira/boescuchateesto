@@ -397,6 +397,7 @@ nav img {
 
 /*SUSCRIPCION*/
 
+
 .title-suscribite {
   background-color: hsl(60, 100%, 84%);
 }
@@ -526,8 +527,11 @@ nav img {
 /*QUIENES SOMOS*/
 
 .quienes-somos{
-  background-color: #ffffad;
-  width: 100%;
+  background-image: url("../images/herosectionback.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .quienes-somos-cuerpo{
@@ -572,13 +576,13 @@ nav img {
   display: flex;
   flex-direction: row;
   margin-bottom: 20px; 
-  background-color:#ceb3f2; 
+  background-color:#ffffadae ; 
   border-radius: 10px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .misionvisionyvalores-card:hover{
-  background-color: #c3a0f1;
+  background-color: #ffffad ;
 }
 
 .misionvisionyvalores-card-texto{
