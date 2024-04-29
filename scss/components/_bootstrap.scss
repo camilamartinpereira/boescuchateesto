@@ -1,0 +1,22 @@
+.bg-violeta {
+    background-color: $main-color;
+  }
+  
+  .bg-amarillo {
+    background-color: $secondary-color;
+  }
+  
+  .btn.bg-amarillo {
+    background-color: $secondary-color-darker;
+    border-color: $secondary-color-darker;
+    color: black;
+  }
+  
+  .btn.bg-violeta {
+    background-color: $main-color;
+    border-color: $main-color;
+  }
+  
+  .btn-violet {
+    background-color: $main-color
+  }

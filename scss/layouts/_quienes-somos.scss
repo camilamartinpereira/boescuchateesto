@@ -1,0 +1,119 @@
+.quienessomos-container {
+    @include flex(row, space-between, flex-start, 0px);
+    background-image: url("../images/herosectionback.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    padding: 50px;
+    width: 100%;
+  }
+  
+  .quienessomos-description {
+    @include flex(column, baseline, baseline, 0px);
+    font-size: 20px;
+    width: calc(50% - 20px);
+    margin-right: 30px;
+  }
+  
+  .quienessomos-description-title {
+    font-size: 60px;
+    padding-bottom: 50px;
+  }
+  
+  .quienesomos-misionvisionyvalores {
+    @include flex(column, baseline, center, 0px);
+    padding-top: 56px;
+    font-size: 18px;
+    width: calc(50% - 20px);
+  }
+  
+  .quienessomos-misionvisionyvalores-card {
+    @include flex (row, center, center, 0px);
+    height: 140px;
+    width: 80%;
+    margin-bottom: 20px;
+    background-color: #ffffadae;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+    &:hover {
+      background-color: $secondary-color-darker;
+    }
+  }
+  
+  .quienessomos-misionvisionyvalores-card-img {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+  
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+  }
+  
+  .quienessomos-misionvisionyvalores-card-text {
+    @include flex(column, space-between, baseline, 0px);
+    padding: 20px;
+    width: 80%;
+  
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .quienessomos-container {
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+  
+    .quienessomos-description {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .quienesomos-misionvisionyvalores {
+      @include flex(column, center, center, 0px);
+      width: 130%;
+    }
+  
+    .quienessomos-misionvisionyvalores-card {
+      height: auto;
+      margin-bottom: 20px;
+      height: 100%;
+    }
+  
+    .quienessomos-misionvisionyvalores-card-img {
+      width: 30%;
+      padding: 10px;
+    }
+  
+    .quienessomos-misionvisionyvalores-card-text {
+      width: 70%;
+      padding: 10px;
+  
+      h2 {
+        font-size: 18px;
+      }
+  
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+  

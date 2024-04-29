@@ -3,8 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bo! Escuchate Esto</title>
     <link rel="stylesheet" href="../css/style.css">
+
+    <!--SEO-->
+    <meta name="description" content="Descubre las últimas noticias, entrevistas y reseñas sobre la música uruguaya en Bo! Escuchate Esto. Mantente informado y conectado con la escena musical local.">
+    <meta name="keywords" content="noticias musicales, entrevistas musicales, reseñas musicales, música uruguaya, escena musical local">
+    <title>NOTAS - Bo! Escuchate Esto</title>
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://metatags.io/" />
+<meta property="og:title" content="NOTAS - Bo! Escuchate Esto" />
+<meta property="og:description" content="Descubre las últimas noticias, entrevistas y reseñas sobre la música uruguaya en Bo! Escuchate Esto. Mantente informado y conectado con la escena musical local." />
+<meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://metatags.io/" />
+<meta property="twitter:title" content="NOTAS - Bo! Escuchate Esto" />
+<meta property="twitter:description" content="Descubre las últimas noticias, entrevistas y reseñas sobre la música uruguaya en Bo! Escuchate Esto. Mantente informado y conectado con la escena musical local." />
+<meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
     <!--LINK BS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
@@ -59,50 +78,89 @@
         </section>
         <!--menu notes-->
         <section class="menunotes-cards">
-            <div class="container">
-                <div class="row row-cols-1 row-cols-md-3 g-3">
-                    <!--note 1-->
-                    <div class="col">
-                        <div class="card shadow-sm h-100">
-                            <img src="../images/fotografiasnotasuno.jpg" class="card-img-top" alt="banda tocando en vivo">
-                            <div class="card-body d-flex flex-column justify-content-between bg-violeta">
-                                <h2 class="card-title">Explorando los Secretos del Éxito de las Bandas Indie en el Escenario Internacional</h2>
-                                <p class="card-text">Explora cómo la tecnología está cambiando la forma en que vivimos y experimentamos los festivales de música, desde la venta de boletos hasta la producción de espectáculos en vivo, y cómo esto está afectando la industria musical en general.</p>
-                                <div class="text-center">
-                                    <a href="../pages/nota-1.html" class="btn btn-dark bg-amarillo">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
+            <div class="menunotes-flipcard">
+                <div class="menunotes-flipcard-inner">
+                    <div class="menunotes-flipcard-front">
+                        <img src="../images/fotografiasnotasuno.jpg" alt="banda tocando en vivo">
+                        <h2 class="card-title">Explorando los Secretos del Éxito de las Bandas Indie en el Escenario Internacional</h2>
                     </div>
-                    <!--note 2-->
-                    <div class="col">
-                        <div class="card shadow-sm h-100">
-                            <img src="../images/fotografianotasdos.jpg" class="card-img-top" alt="mujer cantando en vivo">
-                            <div class="card-body d-flex flex-column justify-content-between bg-violeta">
-                                <h2 class="card-title">Descubriendo el Mundo de la Música Electrónica en la Escena Global</h2>
-                                <p class="card-text">Explora cómo la tecnología está cambiando la forma en que vivimos y experimentamos los festivales de música, desde la venta de boletos hasta la producción de espectáculos en vivo, y cómo esto está afectando la industria musical en general.</p>
-                                <div class="text-center">
-                                    <a href="#" class="btn btn-dark bg-amarillo">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--note 3-->
-                    <div class="col">
-                        <div class="card shadow-sm h-100">
-                            <img src="../images/fotografianotastres.jpg" class="card-img-top" alt="mujer en estudio de grabacion">
-                            <div class="card-body d-flex flex-column justify-content-between bg-violeta">
-                                <h2 class="card-title">Desentrañando los Misterios del Rock Alternativo en la Escena Mundial</h2>
-                                <p class="card-text">Explora cómo la tecnología está cambiando la forma en que vivimos y experimentamos los festivales de música, desde la venta de boletos hasta la producción de espectáculos en vivo, y cómo esto está afectando la industria musical en general.</p>
-                                <div class="text-center">
-                                    <a href="#" class="btn btn-dark bg-amarillo">Leer más</a>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="menunotes-flipcard-back">
+                        <p class="">Explora cómo la tecnología está cambiando la forma en que vivimos y experimentamos los festivales de música, desde la venta de boletos hasta la producción de espectáculos en vivo, y cómo esto está afectando la industria musical en general.</p>
+                        <a href="../pages/nota-1.html" class="menunotes-flipcard-button button">Leer más</a>
                     </div>
                 </div>
             </div>
+            
+            <div class="menunotes-flipcard">
+                <div class="menunotes-flipcard-inner">
+                    <div class="menunotes-flipcard-front">
+                        <img src="../images/fotografianotasdos.jpg" alt="imagen de tarjeta 2">
+                        <h2 class="card-title">La Evolución de los Festivales de Música: Pasado, Presente y Futuro</h2>
+                    </div>
+                    <div class="menunotes-flipcard-back">
+                        <p class="">La evolución de los festivales de música ha sido un reflejo de los cambios en la sociedad y la cultura a lo largo del tiempo. Desde sus inicios en eventos locales hasta las mega-producciones globales de hoy en día, los festivales han sido una parte integral del panorama musical.</p>
+                        <a href="../pages/nota-2.html" class="menunotes-flipcard-button button">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menunotes-flipcard">
+                <div class="menunotes-flipcard-inner">
+                    <div class="menunotes-flipcard-front">
+                        <img src="../images/fotografianotastres.jpg" alt="imagen de tarjeta 2">
+                        <h2 class="card-title">El Impacto de la Música Uruguaya en la Escena Internacional</h2>
+                    </div>
+                    <div class="menunotes-flipcard-back">
+                        <p class="">La música uruguaya ha tenido un impacto significativo en la escena internacional, desde el tango y el candombe hasta el rock y la música electrónica. Explora cómo los artistas uruguayos han influenciado y enriquecido la música global a lo largo de los años.</p>
+                        <a href="../pages/nota-2.html" class="menunotes-flipcard-button button">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menunotes-flipcard">
+                <div class="menunotes-flipcard-inner">
+                    <div class="menunotes-flipcard-front">
+                        <img src="../images/fotografianotastres.jpg" alt="imagen de tarjeta 2">
+                        <h2 class="card-title">Tendencias Emergentes en la Industria Musical: ¿Qué nos depara el futuro?</h2>
+                    </div>
+                    <div class="menunotes-flipcard-back">
+                        <p class="">Las tendencias emergentes en la industria musical están moldeando el futuro del arte sonoro. Desde la integración de la inteligencia artificial hasta la democratización de la producción musical, el panorama está en constante evolución.</p>
+                        <a href="../pages/nota-2.html" class="menunotes-flipcard-button button">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menunotes-flipcard">
+                <div class="menunotes-flipcard-inner">
+                    <div class="menunotes-flipcard-front">
+                        <img src="../images/fotografianotastres.jpg" alt="imagen de tarjeta 2">
+                        <h2 class="card-title">La Revolución Digital y su Influencia en la Producción Musical Actual</h2>
+                    </div>
+                    <div class="menunotes-flipcard-back">
+                        <p class="">La revolución digital ha transformado radicalmente la producción musical. Desde la creación hasta la distribución, la tecnología ha democratizado el proceso creativo y abierto nuevas posibilidades para los artistas y productores.</p>
+                        <a href="../pages/nota-2.html" class="menunotes-flipcard-button button">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menunotes-flipcard">
+                <div class="menunotes-flipcard-inner">
+                    <div class="menunotes-flipcard-front">
+                        <img src="../images/fotografianotastres.jpg" alt="imagen de tarjeta 2">
+                        <h2 class="card-title">Los Paquitos debutaron con álbum nuevo en La Trastienda</h2>
+                    </div>
+                    <div class="menunotes-flipcard-back">
+                        <p class="">Los Paquitos, una de las bandas más prometedoras del panorama indie, hicieron su esperado debut con un álbum nuevo en La Trastienda. Con una fusión única de estilos y una energía inigualable, están listos para conquistar el escenario internacional.</p>
+                        <a href="../pages/nota-2.html" class="menunotes-flipcard-button button">Leer más</a>
+                    </div>
+                </div>
+            </div>
+
+
+
         </section>
+        
+
     </main>
 
     <!-- FOOTER --> 

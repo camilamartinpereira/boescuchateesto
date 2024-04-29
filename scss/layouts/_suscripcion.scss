@@ -1,0 +1,45 @@
+.formcontainer {
+    @include flex(column, center, center, 10px);
+    align-items: center;
+    background-color: $secondary-color;
+    padding: 20px;
+
+    .formcontainer-suscription {
+      @include flex(column, center, center, 0px);
+      background-color: $main-color;
+      width: 900px;
+      padding: 30px;
+      border-radius: 30px;
+    
+      &:hover {
+        background-color: $main-color-darker;
+      }
+    }
+    
+    .formcontainer-suscripcion-input {
+      padding: 0.7em;
+      margin-bottom: 0.5rem;
+      width: 100%;
+    }
+    
+  
+    .formcontainer-suscripcion-label {
+      padding: 0.5em 0.5em 0.5em 0;
+    }
+    
+    .formcontainer-suscripcion-input:focus {
+      outline: 3px solid rgb(0, 0, 0);
+    }
+    
+    @media (min-width: 400px) {
+      .formcontainer-suscription {
+        max-width: 400px;
+      }
+    }
+  
+    .formcontainer-button{
+      @include button (black, $secondary-color, $secondary-color-darker);
+    }  
+  }
+  
+  
