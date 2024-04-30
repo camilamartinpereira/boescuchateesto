@@ -1,203 +1,202 @@
 .hero-section {
-    @include flex(row, baseline, baseline, 0px);
-    background-color: #f2e0c9;
-    height: 100%;
-    padding: 50px;
-    background-image: url("../images/herosectionback.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }
-  
-  .img-hero {
-    opacity: 50%;
-  }
-  
-  .hero-section-content {
-    @include flex(column, baseline, baseline, 0px);
-    padding: 40px;
-  }
-  
-  .hero-section a {
-    text-decoration: none;
-    text-align: center;
-    width: 200px;
-    height: 50px;
-    border-radius: 50px;
-    background-color: $secondary-color;
+  @include flex(row,center, center,0px);
+  height: 500px;
+  padding: 50px;
+  background-image: url("../images/herosectionback.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.img-hero {
+  opacity: 50%;
+}
+
+.hero-section-content {
+  @include flex(column, baseline, baseline, 0px);
+  padding-top: 40px;
+  padding-left: 20px;
+}
+
+.hero-section a {
+  text-decoration: none;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: $secondary-color;
+  color: black;
+  border: none;
+  padding: 10px;
+  margin: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  align-self: flex-end;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+
+  &:hover {
+    background-color: $main-color-darker;
     color: black;
-    border: none;
-    padding: 10px;
-    margin: 30px;
-    font-size: 16px;
-    font-weight: bold;
-    align-self: flex-end;
-    cursor: pointer;
-    transition: background-color 0.5s ease;
-  
-    &:hover {
-      background-color: $main-color-darker;
-      color: black;
+  }
+}
+
+.hero-section-title {
+  font-size: 150px;
+  font-weight: bold;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-section-text {
+  font-size: 20px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+
+    a {
+      align-self: center;
     }
   }
-  
+
   .hero-section-title {
-    font-size: 150px;
+    font-size: 10vh;
     font-weight: bold;
     justify-content: center;
     text-align: center;
   }
-  
-  .hero-section-text {
-    font-size: 20px;
-    width: 100%;
+}
+
+/* Main cards */
+
+.cards-index {
+  background-color: $secondary-color;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card-index-box {
+  background-color: $almost-white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 30%;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: $almost-white-darker;
+  }
+}
+
+.card-index-content {
+  padding: 20px;
+}
+
+.card-index-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-index-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-index-text {
+  font-size: 1rem;
+  color: #000000;
+}
+
+.card-index-button {
+  @include button (black, $main-color, $secondary-color);;
+  display: inline-block;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover{
+    font-weight: bold;
   }
   
-  @media (max-width: 768px) {
-    .hero-section {
-      display: flex;
-      flex-direction: column;
-      padding: 40px;
-  
-      a {
-        align-self: center;
-      }
-    }
-  
-    .hero-section-title {
-      font-size: 10vh;
-      font-weight: bold;
-      justify-content: center;
-      text-align: center;
-    }
-  }
-  
-  /* Main cards */
-  
+}
+
+
+@media (max-width: 768px) {
   .cards-index {
-    background-color: $secondary-color;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
   }
-  
+
   .card-index-box {
-    background-color: $almost-white;
-    border-radius: 10px;
-    overflow: hidden;
-    width: 30%;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease-in-out;
-  
-    &:hover {
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
+    width: 90%;
   }
-  
-  .card-index-content {
-    padding: 20px;
-  }
-  
-  .card-index-img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px 10px 0 0;
-  }
-  
-  .card-index-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .card-index-text {
-    font-size: 1rem;
-    color: #000000;
-  }
-  
-  .card-index-button {
-    display: inline-block;
-    padding: 8px 16px;
-    background-color: $main-color;
-    color: black;
-    text-decoration: none;
-    border-radius: 20px;
-    transition: background-color 0.3s, color 0.3s;
-  
-    &:hover {
-      background-color: #ceb3f2;
-      color: black;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .cards-index {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .card-index-box {
-      width: 90%;
-    }
-  }
-  
-  /* playlist */
-  
+}
+
+/* playlist */
+
+.playlist {
+  background-color: $main-color;
+  padding: 60px;
+  background-color: $secondary-color;
+  height: 100%;
+  padding: 50px;
+  background-image: url("../images/herosectionback.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.playlist-box {
+  @include flex (row, baseline, center, 0px);
+}
+
+.playlist-title {
+  font-size: 50px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 20px;
+}
+
+.playlist-iframe {
+  width: 80%;
+  border-radius: 12px;
+  margin: 5px;
+}
+
+@media (max-width: 768px) {
   .playlist {
-    @include flex(row, baseline, baseline, 0px);
     background-color: $main-color;
-    padding: 60px;
-    background-color: $secondary-color;
-    height: 100%;
-    padding: 50px;
-    background-image: url("../images/herosectionback.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }
-  
-  .playlist-box {
-    @include flex (row, baseline, center, 0px);
-  }
-  
-  .playlist-title {
-    font-size: 50px;
-    font-weight: bold;
     padding: 10px;
-    margin: 20px;
   }
-  
+
+  .playlist-box {
+    flex-direction: column;
+  }
+
+  .playlist-title {
+    font-size: 48px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
   .playlist-iframe {
-    width: 80%;
-    border-radius: 12px;
-    margin: 5px;
+    width: 100%;
+    border-radius: 0px;
+    margin: 0px;
   }
-  
-  @media (max-width: 768px) {
-    .playlist {
-      background-color: $main-color;
-      padding: 10px;
-    }
-  
-    .playlist-box {
-      flex-direction: column;
-    }
-  
-    .playlist-title {
-      font-size: 48px;
-      text-align: center;
-      width: 100%;
-      margin-bottom: 20px;
-    }
-  
-    .playlist-iframe {
-      width: 100%;
-      border-radius: 0px;
-      margin: 0px;
-    }
-  }
-  
+}
