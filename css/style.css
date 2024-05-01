@@ -15,7 +15,6 @@ header nav img {
   border-radius: 50px;
   border: none;
   padding: 10px;
-  margin: 30px;
   font-size: 16px;
   font-weight: bold;
   transition: background-color 0.5s ease;
@@ -508,30 +507,24 @@ main {
 }
 
 .entrada-blog-container-boton {
-  background-color: #dddd85;
-  display: block;
-  background: #ffffad;
-  padding: 0.7em;
-  width: 100px;
-  border: none;
-  border-radius: 50px;
-  text-align: center;
-  text-decoration: none;
   color: black;
+  background-color: #ffffad;
 }
 .entrada-blog-container-boton:hover {
-  background-color: #ceb3f2;
+  background-color: #dddd85;
+}
+.entrada-blog-container-boton:hover {
   font-weight: bold;
 }
 
 @media (max-width: 768px) {
-  .entrada-blog {
+  .contenedor-nota-1 {
     padding: 20px;
   }
   .entrada-blog-container {
-    padding: 15px;
+    padding: 5px;
   }
-  .entrada-blog-title {
+  .title-entrada-blog {
     font-size: 1.5rem;
   }
   .entrada-blog-container p {
@@ -539,17 +532,11 @@ main {
     margin-left: 10px;
     margin-right: 10px;
   }
-  .entrada-blog-container-back {
-    padding-left: 60px;
-  }
   .entrada-blog-title-t {
     font-size: larger;
   }
   .entrada-blog-subtitle-t {
     font-size: small;
-  }
-  .entrada-blog-p {
-    margin: 0px;
   }
 }
 .formcontainer {
