@@ -1,44 +1,52 @@
 .formcontainer {
-    @include flex(column, center, center, 10px);
-    align-items: center;
-    background-color: $secondary-color;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem; /* Equivalente a 10px en píxeles */
+  align-items: center;
+  background-color: $secondary-color;
+  padding: 1.25rem; /* Equivalente a 20px en píxeles */
 
+  .formcontainer-suscription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    background-color: $main-color;
+    width: 95%; /* Modificado para ocupar el 95% del ancho de la pantalla */
+    max-width: 56.25rem; /* Equivalente a 900px en píxeles */
+    padding: 1.875rem; /* Equivalente a 30px en píxeles */
+    border-radius: 1.875rem; /* Equivalente a 30px en píxeles */
+
+    &:hover {
+      background-color: $main-color-darker;
+    }
+  }
+
+  .formcontainer-suscripcion-input {
+    padding: 0.4375rem; /* Equivalente a 7px en píxeles */
+    margin-bottom: 0.3125rem; /* Equivalente a 5px en píxeles */
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+
+  .formcontainer-suscripcion-label {
+    padding: 0.3125rem 0.3125rem 0.3125rem 0; /* Equivalente a 5px en píxeles */
+  }
+
+  .formcontainer-suscripcion-input:focus {
+    outline: 0.1875rem solid rgb(0, 0, 0); /* Equivalente a 3px en píxeles */
+  }
+
+  @media (min-width: 25rem) { /* Equivalente a 400px en píxeles */
     .formcontainer-suscription {
-      @include flex(column, center, center, 0px);
-      background-color: $main-color;
-      width: 900px;
-      padding: 30px;
-      border-radius: 30px;
-    
-      &:hover {
-        background-color: $main-color-darker;
-      }
+      max-width: 25rem; /* Equivalente a 400px en píxeles */
     }
-    
-    .formcontainer-suscripcion-input {
-      padding: 0.7em;
-      margin-bottom: 0.5rem;
-      width: 100%;
-    }
-    
-  
-    .formcontainer-suscripcion-label {
-      padding: 0.5em 0.5em 0.5em 0;
-    }
-    
-    .formcontainer-suscripcion-input:focus {
-      outline: 3px solid rgb(0, 0, 0);
-    }
-    
-    @media (min-width: 400px) {
-      .formcontainer-suscription {
-        max-width: 400px;
-      }
-    }
-  
-    .formcontainer-button{
-      @include button (black, $secondary-color, $secondary-color-darker);
-    }  
+  }
+
+  .formcontainer-button {
+    @include button (black, $secondary-color, $secondary-color-darker);
+  }
 }
-  

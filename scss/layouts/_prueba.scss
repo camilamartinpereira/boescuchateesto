@@ -1,0 +1,32 @@
+.pruebahtml, .pruebabody, .pruebasection {
+    block-size: 100%;
+  }
+  
+  .pruebahtml {
+    scroll-snap-type: y mandatory;
+  }
+  
+  .prueba {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .prueba:nth-of-type(even) {
+    color: white;
+    background: black;
+  }
+  
+  .prueba:nth-of-type(odd) {
+    color: black;
+    background: white;
+  }
+  
+  ,.pruebabody {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+    font-size: 4rem;
+  }
