@@ -2,17 +2,17 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
   grid-template-rows: repeat(2, 1fr); 
-  grid-row-gap: 3.125rem; // 50px en REM
+  grid-row-gap: 3.125rem; 
   background-color: $secondary-color;
-  padding: 1.875rem; // 30px en REM
+  padding: 1.875rem; 
 
-  @media screen and (max-width: 61.25rem) { // 992px en REM
+  @media screen and (max-width: 61.25rem) { 
     grid-template-columns: repeat(2, 1fr); 
     grid-template-rows: repeat(3, 1fr); 
-    padding: 1.25rem; // 20px en REM
+    padding: 1.25rem;
   }
 
-  @media screen and (max-width: 37.5rem) { // 600px en REM
+  @media screen and (max-width: 37.5rem) { 
     grid-template-columns: repeat(1, 1fr); 
     grid-template-rows: auto; 
   }
@@ -20,9 +20,9 @@
 
 .menunotes-flipcard {
   background-color: transparent;
-  width: calc(100% - 1.875rem * 2); // Ajuste para dejar espacio de padding
-  height: 34.375rem; // 550px en REM
-  perspective: 62.5rem; // 1000px en REM
+  width: calc(100% - 1.875rem * 2); 
+  height: 34.375rem; 
+  perspective: 62.5rem; 
 
   @media screen and (max-width: 37.5rem){
   width:100%
@@ -46,7 +46,7 @@
 
 .menunotes-flipcard-front,
 .menunotes-flipcard-back {
-  box-shadow: 0 0.5rem 0.625rem rgba(0, 0, 0, 0.99); // 0 8px 10px rgba(0, 0, 0, 0.99);
+  box-shadow: 0 0.5rem 0.625rem rgba(0, 0, 0, 0.99); 
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -56,22 +56,22 @@
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border-radius: 1rem; // 16px en REM
-  gap: 1.25rem; // 20px en REM
+  border-radius: 1rem; 
+  gap: 1.25rem; 
 }
 
 .menunotes-flipcard-front {
   background-color: $main-color; 
-  padding: 1.875rem; // 30px en REM
+  padding: 1.875rem; 
 }
 
 .menunotes-flipcard-front img {
   @include img(100%, 70%, cover); 
-  border-radius: 1rem; // 16px en REM
+  border-radius: 1rem; 
 }
 
 .menunotes-flipcard-front h2 {
-  @include text(1.25rem, bold, center, #000); // 20px en REM
+  @include text(1.25rem, bold, center, #000); 
 }
 
 .menunotes-flipcard-back {
@@ -79,11 +79,11 @@
   background-color: $main-color; 
   color: #000000; 
   display: flex;
-  gap: 3.125rem; // 50px en REM
+  gap: 3.125rem; 
 }
 
 .menunotes-flipcard-back p {
-  @include text(1.125rem, normal, left, #000); // 18px en REM
+  @include text(1.125rem, normal, left, #000); 
   width: 80%;
 }
 

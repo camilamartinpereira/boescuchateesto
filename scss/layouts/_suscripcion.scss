@@ -3,10 +3,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.625rem; /* Equivalente a 10px en píxeles */
+  gap: 0.625rem;
   align-items: center;
   background-color: $secondary-color;
-  padding: 1.25rem; /* Equivalente a 20px en píxeles */
+  padding: 1.25rem;
 
   .formcontainer-suscription {
     display: flex;
@@ -15,10 +15,10 @@
     align-items: center;
     gap: 0px;
     background-color: $main-color;
-    width: 95%; /* Modificado para ocupar el 95% del ancho de la pantalla */
-    max-width: 56.25rem; /* Equivalente a 900px en píxeles */
-    padding: 1.875rem; /* Equivalente a 30px en píxeles */
-    border-radius: 1.875rem; /* Equivalente a 30px en píxeles */
+    width: 95%; 
+    max-width: 56.25rem; 
+    padding: 1.875rem;
+    border-radius: 1.875rem;
 
     &:hover {
       background-color: $main-color-darker;
@@ -26,23 +26,23 @@
   }
 
   .formcontainer-suscripcion-input {
-    padding: 0.4375rem; /* Equivalente a 7px en píxeles */
-    margin-bottom: 0.3125rem; /* Equivalente a 5px en píxeles */
+    padding: 0.4375rem; 
+    margin-bottom: 0.3125rem; 
     width: 100%;
     border-radius: 0.5rem;
   }
 
   .formcontainer-suscripcion-label {
-    padding: 0.3125rem 0.3125rem 0.3125rem 0; /* Equivalente a 5px en píxeles */
+    padding: 0.3125rem 0.3125rem 0.3125rem 0; 
   }
 
   .formcontainer-suscripcion-input:focus {
-    outline: 0.1875rem solid rgb(0, 0, 0); /* Equivalente a 3px en píxeles */
+    outline: 0.1875rem solid rgb(0, 0, 0); 
   }
 
-  @media (min-width: 25rem) { /* Equivalente a 400px en píxeles */
+  @media (min-width: 25rem) { 
     .formcontainer-suscription {
-      max-width: 25rem; /* Equivalente a 400px en píxeles */
+      max-width: 25rem; 
     }
   }
 
