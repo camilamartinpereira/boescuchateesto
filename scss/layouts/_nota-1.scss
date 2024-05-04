@@ -1,82 +1,49 @@
 .contenedor-nota-1 {
-    padding: 60px;
-    border-radius: 10px;
-    background-color: $secondary-color;
+  padding: 3.75rem;
+  border-radius: 1rem;
+  background-color: $secondary-color;
+}
+
+.entrada-blog-p {
+  margin: 1.25rem;
+}
+
+.entrada-blog-container {
+  background-color: $main-color;
+  padding: 1.25rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  margin-bottom: 0;
+}
+
+.entrada-blog-carrusel-bootstrap {
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color: $main-color;
+}
+
+.carousel {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+.carousel-item img {
+  @include img(100%, 25rem, cover)
+}
+
+.entrada-blog-container-back {
+  background-color: $main-color;
+  padding: 1.25rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-top: 1px solid $main-color;
+  padding-left: 3.75rem;
+}
+
+.entrada-blog-container-boton {
+  @include button (black, $secondary-color, $secondary-color-darker);
+
+  &:hover {
+    font-weight: bold;
   }
-  
-  .entrada-blog-p {
-    margin: 20px;
-  }
-  
-  .entrada-blog-container {
-    background-color: $main-color;
-    padding: 20px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    margin-bottom: 0;
-  }
-  
-  /* carrusel */
-  
-  .entrada-blog-carrusel-bootstrap {
-    margin-top: 0;
-    margin-bottom: 0;
-    background-color: $main-color;
-  }
-  
-  .carousel {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .carousel-item img {
-    @include img(100%, 400px, cover)
-  }
-  
-  .entrada-blog-container-back {
-    background-color: $main-color;
-    padding: 20px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-top: 1px solid $main-color;
-    padding-left: 60px;
-  }
-  
-  .entrada-blog-container-boton {
-    @include button (black, $secondary-color, $secondary-color-darker);
-  
-    &:hover {
-      font-weight: bold;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .contenedor-nota-1{
-      padding: 20px;
-    }
-  
-    .entrada-blog-container{
-      padding: 5px;
-    }
-  
-    .title-entrada-blog {
-      font-size: 1.5rem;
-    }
-  
-    .entrada-blog-container p {
-      margin-bottom: 20px;
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-  
-  
-  
-    .entrada-blog-title-t {
-      font-size: larger;
-    }
-  
-    .entrada-blog-subtitle-t {
-      font-size: small;
-    }
-  }
- 
+}

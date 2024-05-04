@@ -1,7 +1,7 @@
 .hero-section {
-  @include flex(row,center, center,0px);
-  height: 500px;
-  padding: 50px;
+  @include flex(row, center, center, 0px);
+  height: 31.25rem; 
+  padding: 3.125rem; 
   background-image: url("../images/herosectionback.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -15,22 +15,22 @@
 
 .hero-section-content {
   @include flex(column, baseline, baseline, 0px);
-  padding-top: 40px;
-  padding-left: 20px;
+  padding-top: 2.5rem; 
+  padding-left: 1.25rem; 
 }
 
 .hero-section a {
   text-decoration: none;
   text-align: center;
-  width: 200px;
-  height: 50px;
-  border-radius: 50px;
+  width: 12.5rem; 
+  height: 3.125rem; 
+  border-radius: 3.125rem; 
   background-color: $secondary-color;
   color: black;
   border: none;
-  padding: 10px;
-  margin: 30px;
-  font-size: 16px;
+  padding: 0.625rem; 
+  margin: 1.875rem; 
+  font-size: 1rem; 
   font-weight: bold;
   align-self: flex-end;
   cursor: pointer;
@@ -43,41 +43,20 @@
 }
 
 .hero-section-title {
-  font-size: 150px;
+  font-size: 9.375rem; 
   font-weight: bold;
   justify-content: center;
   text-align: center;
 }
 
 .hero-section-text {
-  font-size: 20px;
+  font-size: 1.25rem; 
   width: 100%;
 }
 
-@media (max-width: 768px) {
-  .hero-section {
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
-
-    a {
-      align-self: center;
-    }
-  }
-
-  .hero-section-title {
-    font-size: 10vh;
-    font-weight: bold;
-    justify-content: center;
-    text-align: center;
-  }
-}
-
-/* Main cards */
-
 .cards-index {
   background-color: $secondary-color;
-  padding: 20px;
+  padding: 1.25rem; 
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -85,74 +64,59 @@
 
 .card-index-box {
   background-color: $almost-white;
-  border-radius: 10px;
+  border-radius: 0.625rem; 
   overflow: hidden;
   width: 30%;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.25rem; 
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease-in-out;
 
   &:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     background-color: $almost-white-darker;
   }
 }
 
 .card-index-content {
-  padding: 20px;
+  padding: 1.25rem; 
 }
 
 .card-index-img {
   width: 100%;
   height: auto;
-  border-radius: 10px 10px 0 0;
+  border-radius: 0.625rem; 
 }
 
 .card-index-title {
-  font-size: 1.5rem;
+  font-size: 1.5rem; 
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem; 
 }
 
 .card-index-text {
-  font-size: 1rem;
+  font-size: 1rem; 
   color: #000000;
 }
 
 .card-index-button {
-  @include button (black, $main-color, $secondary-color);;
+  @include button(black, $main-color, $secondary-color);
   display: inline-block;
-  padding: 8px 16px;
+  padding: 0.5rem 1rem; 
   text-decoration: none;
-  border-radius: 20px;
+  border-radius: 1.25rem; 
   transition: background-color 0.3s, color 0.3s;
 
-  &:hover{
+  &:hover {
     font-weight: bold;
   }
-  
 }
-
-
-@media (max-width: 768px) {
-  .cards-index {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card-index-box {
-    width: 90%;
-  }
-}
-
-/* playlist */
 
 .playlist {
   background-color: $main-color;
-  padding: 60px;
+  padding: 3.75rem; 
   background-color: $secondary-color;
   height: 100%;
-  padding: 50px;
+  padding: 3.125rem; 
   background-image: url("../images/herosectionback.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -161,42 +125,18 @@
 }
 
 .playlist-box {
-  @include flex (row, baseline, center, 0px);
+  @include flex(row, baseline, center, 0px);
 }
 
 .playlist-title {
-  font-size: 50px;
+  font-size: 3.125rem; 
   font-weight: bold;
-  padding: 10px;
-  margin: 20px;
+  padding: 0.625rem; 
+  margin: 1.25rem; 
 }
 
 .playlist-iframe {
   width: 80%;
-  border-radius: 12px;
-  margin: 5px;
-}
-
-@media (max-width: 768px) {
-  .playlist {
-    background-color: $main-color;
-    padding: 10px;
-  }
-
-  .playlist-box {
-    flex-direction: column;
-  }
-
-  .playlist-title {
-    font-size: 48px;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .playlist-iframe {
-    width: 100%;
-    border-radius: 0px;
-    margin: 0px;
-  }
+  border-radius: 0.75rem; 
+  margin: 0.3125rem; 
 }

@@ -2,9 +2,9 @@ header main {
   background-color: #ffffad;
 }
 header nav img {
-  width: 70px;
-  height: 70px;
-  margin: 20px;
+  width: 4.375rem;
+  height: 4.375rem;
+  margin: 1.25rem;
 }
 
 .button {
@@ -27,23 +27,23 @@ footer {
   background-color: #ceb3f2;
   color: black;
   text-align: center;
-  height: 200px;
+  height: 12.5rem;
 }
 footer img {
-  width: 70px;
-  height: 70px;
-  margin: 20px;
+  width: 4.375rem;
+  height: 4.375rem;
+  margin: 1.25rem;
 }
 footer .footer-content {
-  max-width: 800px;
+  max-width: 50rem;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
 }
 footer .footer-content img {
-  width: 100px;
+  width: 6.25rem;
   height: auto;
-  padding: 5px;
+  padding: 0.3125rem;
 }
 footer ul {
   list-style: none;
@@ -52,15 +52,15 @@ footer ul {
 }
 footer ul li {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
 footer ul li a {
   color: black;
   text-decoration: none;
-  padding-top: 10px;
+  padding-top: 0.625rem;
 }
 footer p {
-  margin-top: 20px;
+  margin-top: 1.25rem;
   font-weight: bold;
 }
 
@@ -69,17 +69,17 @@ footer p {
   padding-top: 1em;
 }
 .title-h1 {
-  font-size: 50px;
+  font-size: 3.125rem;
   font-weight: bold;
   color: black;
   margin: 0;
   align-items: center;
 }
 .title-p {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-style: italic;
   color: black;
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 
 .bg-violeta {
@@ -115,8 +115,8 @@ main {
   justify-content: center;
   align-items: center;
   gap: 0px;
-  height: 500px;
-  padding: 50px;
+  height: 31.25rem;
+  padding: 3.125rem;
   background-image: url("../images/herosectionback.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -134,22 +134,22 @@ main {
   justify-content: baseline;
   align-items: baseline;
   gap: 0px;
-  padding-top: 40px;
-  padding-left: 20px;
+  padding-top: 2.5rem;
+  padding-left: 1.25rem;
 }
 
 .hero-section a {
   text-decoration: none;
   text-align: center;
-  width: 200px;
-  height: 50px;
-  border-radius: 50px;
+  width: 12.5rem;
+  height: 3.125rem;
+  border-radius: 3.125rem;
   background-color: #ffffad;
   color: black;
   border: none;
-  padding: 10px;
-  margin: 30px;
-  font-size: 16px;
+  padding: 0.625rem;
+  margin: 1.875rem;
+  font-size: 1rem;
   font-weight: bold;
   align-self: flex-end;
   cursor: pointer;
@@ -161,37 +161,20 @@ main {
 }
 
 .hero-section-title {
-  font-size: 150px;
+  font-size: 9.375rem;
   font-weight: bold;
   justify-content: center;
   text-align: center;
 }
 
 .hero-section-text {
-  font-size: 20px;
+  font-size: 1.25rem;
   width: 100%;
 }
 
-@media (max-width: 768px) {
-  .hero-section {
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
-  }
-  .hero-section a {
-    align-self: center;
-  }
-  .hero-section-title {
-    font-size: 10vh;
-    font-weight: bold;
-    justify-content: center;
-    text-align: center;
-  }
-}
-/* Main cards */
 .cards-index {
   background-color: #ffffad;
-  padding: 20px;
+  padding: 1.25rem;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -199,32 +182,32 @@ main {
 
 .card-index-box {
   background-color: #f3eff6;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   overflow: hidden;
   width: 30%;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.25rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease-in-out;
 }
 .card-index-box:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
   background-color: #eae5ef;
 }
 
 .card-index-content {
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .card-index-img {
   width: 100%;
   height: auto;
-  border-radius: 10px 10px 0 0;
+  border-radius: 0.625rem;
 }
 
 .card-index-title {
   font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 .card-index-text {
@@ -236,9 +219,9 @@ main {
   color: black;
   background-color: #ceb3f2;
   display: inline-block;
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   text-decoration: none;
-  border-radius: 20px;
+  border-radius: 1.25rem;
   transition: background-color 0.3s, color 0.3s;
 }
 .card-index-button:hover {
@@ -248,22 +231,12 @@ main {
   font-weight: bold;
 }
 
-@media (max-width: 768px) {
-  .cards-index {
-    flex-direction: column;
-    align-items: center;
-  }
-  .card-index-box {
-    width: 90%;
-  }
-}
-/* playlist */
 .playlist {
   background-color: #ceb3f2;
-  padding: 60px;
+  padding: 3.75rem;
   background-color: #ffffad;
   height: 100%;
-  padding: 50px;
+  padding: 3.125rem;
   background-image: url("../images/herosectionback.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -280,84 +253,64 @@ main {
 }
 
 .playlist-title {
-  font-size: 50px;
+  font-size: 3.125rem;
   font-weight: bold;
-  padding: 10px;
-  margin: 20px;
+  padding: 0.625rem;
+  margin: 1.25rem;
 }
 
 .playlist-iframe {
   width: 80%;
-  border-radius: 12px;
-  margin: 5px;
+  border-radius: 0.75rem;
+  margin: 0.3125rem;
 }
 
-@media (max-width: 768px) {
-  .playlist {
-    background-color: #ceb3f2;
-    padding: 10px;
-  }
-  .playlist-box {
-    flex-direction: column;
-  }
-  .playlist-title {
-    font-size: 48px;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .playlist-iframe {
-    width: 100%;
-    border-radius: 0px;
-    margin: 0px;
-  }
-}
 .gallery-main {
   background-color: #ffffad;
 }
 
 .gallery {
   display: flex;
-  padding: 20px;
-  gap: 20px;
+  padding: 1.25rem;
+  gap: 1.25rem;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.gallery:hover .gallery-img-container:not(:hover) {
+  filter: blur(15px) opacity(0.5);
 }
 
 .gallery-img-container {
   position: relative;
   flex-grow: 1;
-  flex-basis: 320px;
+  flex-basis: 20rem;
   width: 100%;
-  height: 400px;
-  border-radius: 50px;
+  height: 25rem;
+  border-radius: 3.125rem;
   overflow: hidden;
   transition: 0.5s;
 }
 .gallery-img-container:hover {
   flex-grow: 5;
 }
-.gallery-img-container img {
+
+img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-@media (min-width: 768px) {
-  .gallery:hover .gallery-img-container:not(:hover) {
-    filter: blur(15px) opacity(0.5);
-  }
-}
 .gallery-h2 {
   color: black;
-  font-size: 20px;
+  font-size: 1.25rem;
   position: absolute;
   top: 80%;
   width: 100%;
   left: 50%;
   text-align: center;
   transform: translateX(-50%);
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem;
   background-color: #ceb3f2;
   z-index: 1;
 }
@@ -370,30 +323,12 @@ main {
   background-color: #ffffad;
   padding: 1.875rem;
 }
-@media screen and (max-width: 61.25rem) {
-  .menunotes-cards {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    padding: 1.25rem;
-  }
-}
-@media screen and (max-width: 37.5rem) {
-  .menunotes-cards {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: auto;
-  }
-}
 
 .menunotes-flipcard {
   background-color: transparent;
-  width: calc(100% - 3.75rem);
+  width: calc(100% - 7.5rem);
   height: 34.375rem;
   perspective: 62.5rem;
-}
-@media screen and (max-width: 37.5rem) {
-  .menunotes-flipcard {
-    width: 100%;
-  }
 }
 
 .menunotes-flipcard-inner {
@@ -469,24 +404,23 @@ main {
 }
 
 .contenedor-nota-1 {
-  padding: 60px;
-  border-radius: 10px;
+  padding: 3.75rem;
+  border-radius: 1rem;
   background-color: #ffffad;
 }
 
 .entrada-blog-p {
-  margin: 20px;
+  margin: 1.25rem;
 }
 
 .entrada-blog-container {
   background-color: #ceb3f2;
-  padding: 20px;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
+  padding: 1.25rem;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
   margin-bottom: 0;
 }
 
-/* carrusel */
 .entrada-blog-carrusel-bootstrap {
   margin-top: 0;
   margin-bottom: 0;
@@ -494,23 +428,23 @@ main {
 }
 
 .carousel {
-  max-width: 800px;
+  max-width: 50rem;
   margin: 0 auto;
 }
 
 .carousel-item img {
   width: 100%;
-  height: 400px;
+  height: 25rem;
   object-fit: cover;
 }
 
 .entrada-blog-container-back {
   background-color: #ceb3f2;
-  padding: 20px;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+  padding: 1.25rem;
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
   border-top: 1px solid #ceb3f2;
-  padding-left: 60px;
+  padding-left: 3.75rem;
 }
 
 .entrada-blog-container-boton {
@@ -524,28 +458,6 @@ main {
   font-weight: bold;
 }
 
-@media (max-width: 768px) {
-  .contenedor-nota-1 {
-    padding: 20px;
-  }
-  .entrada-blog-container {
-    padding: 5px;
-  }
-  .title-entrada-blog {
-    font-size: 1.5rem;
-  }
-  .entrada-blog-container p {
-    margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  .entrada-blog-title-t {
-    font-size: larger;
-  }
-  .entrada-blog-subtitle-t {
-    font-size: small;
-  }
-}
 .formcontainer {
   display: flex;
   flex-direction: column;
@@ -691,16 +603,85 @@ main {
   font-size: 1rem;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+  }
+  .hero-section a {
+    align-self: center;
+  }
+  .hero-section-title {
+    font-size: 10vh;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+  }
+  .cards-index {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-index-box {
+    width: 90%;
+  }
+  .playlist {
+    background-color: #ceb3f2;
+    padding: 0.625rem;
+  }
+  .playlist-box {
+    flex-direction: column;
+  }
+  .playlist-title {
+    font-size: 3rem;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1.25rem;
+  }
+  .playlist-iframe {
+    width: 100%;
+    border-radius: 0px;
+    margin: 0px;
+  }
+  .gallery:hover .gallery-img-container:not(:hover) {
+    filter: none;
+  }
+  .menunotes-cards {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+  }
+  .menunotes-flipcard {
+    width: 100%;
+  }
+  .contenedor-nota-1 {
+    padding: 1.25rem;
+  }
+  .entrada-blog-container {
+    padding: 0.3125rem;
+  }
+  .title-entrada-blog {
+    font-size: 1.5rem;
+  }
+  .entrada-blog-container p {
+    margin-bottom: 1.25rem;
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+  }
+  .entrada-blog-title-t {
+    font-size: larger;
+  }
+  .entrada-blog-subtitle-t {
+    font-size: small;
+  }
   .quienessomos-container {
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 1.25rem;
   }
   .quienessomos-description {
     width: 100%;
     margin-right: 0;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
   }
   .quienesomos-misionvisionyvalores {
     display: flex;
@@ -712,16 +693,26 @@ main {
   }
   .quienessomos-misionvisionyvalores-card {
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     height: 100%;
   }
   .quienessomos-misionvisionyvalores-card-img {
     width: 30%;
-    padding: 10px;
+    padding: 0.625rem;
   }
   .quienessomos-misionvisionyvalores-card-text {
     width: 70%;
-    padding: 10px;
+    padding: 0.625rem;
+  }
+  .formcontainer-suscription {
+    max-width: 25rem;
+  }
+  .menunotes-cards {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+  }
+  .menunotes-flipcard {
+    width: 100%;
   }
 }
 

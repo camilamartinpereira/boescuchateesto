@@ -1,0 +1,134 @@
+@media (max-width: 768px) {
+
+    .hero-section {
+      display: flex;
+      flex-direction: column;
+      padding: 2.5rem;
+  
+      a {
+        align-self: center;
+      }
+    }
+  
+    .hero-section-title {
+      font-size: 10vh;
+      font-weight: bold;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .cards-index {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .card-index-box {
+        width: 90%;
+      }
+
+      .playlist {
+        background-color: $main-color;
+        padding: 0.625rem;
+      }
+    
+      .playlist-box {
+        flex-direction: column;
+      }
+    
+      .playlist-title {
+        font-size: 3rem;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 1.25rem;
+      }
+    
+      .playlist-iframe {
+        width: 100%;
+        border-radius: 0px;
+        margin: 0px;
+      }
+
+      .gallery:hover .gallery-img-container:not(:hover) {
+        filter: none
+      }
+
+      .menunotes-cards {
+        grid-template-columns: repeat(1, 1fr); 
+        grid-template-rows: auto; 
+      }
+
+      .menunotes-flipcard{
+        width:100%
+      }
+
+      .contenedor-nota-1{
+        padding: 1.25rem;
+      }
+    
+      .entrada-blog-container{
+        padding: 0.3125rem;
+      }
+    
+      .title-entrada-blog {
+        font-size: 1.5rem;
+      }
+    
+      .entrada-blog-container p {
+        margin-bottom: 1.25rem;
+        margin-left: 0.625rem;
+        margin-right: 0.625rem;
+      }
+    
+      .entrada-blog-title-t {
+        font-size: larger;
+      }
+    
+      .entrada-blog-subtitle-t {
+        font-size: small;
+      }
+
+      .quienessomos-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 1.25rem;
+      }
+    
+      .quienessomos-description {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1.25rem;
+      }
+    
+      .quienesomos-misionvisionyvalores {
+        @include flex(column, center, center, 0px);
+        width: 130%;
+      }
+    
+      .quienessomos-misionvisionyvalores-card {
+        height: auto;
+        margin-bottom: 1.25rem;
+        height: 100%;
+      }
+    
+      .quienessomos-misionvisionyvalores-card-img {
+        width: 30%;
+        padding: 0.625rem;
+      }
+    
+      .quienessomos-misionvisionyvalores-card-text {
+        width: 70%;
+        padding: 0.625rem;
+      }
+
+      .formcontainer-suscription {
+        max-width: 25rem; 
+      }
+
+      .menunotes-cards{
+        grid-template-columns: repeat(1, 1fr); 
+        grid-template-rows: auto;
+        }
+        .menunotes-flipcard{
+            width: 100%;
+        }
+    }
