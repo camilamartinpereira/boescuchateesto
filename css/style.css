@@ -14,7 +14,7 @@ header nav img {
   height: 50px;
   border-radius: 50px;
   border: none;
-  padding: 10px;
+  padding: 20px;
   font-size: 16px;
   font-weight: bold;
   transition: background-color 0.5s ease;
@@ -115,61 +115,141 @@ main {
   justify-content: center;
   align-items: center;
   gap: 0px;
-  height: 31.25rem;
-  padding: 3.125rem;
   background-image: url("../images/herosectionback.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-}
-
-.img-hero {
-  opacity: 50%;
-}
-
-.hero-section-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: baseline;
-  align-items: baseline;
-  gap: 0px;
-  padding-top: 2.5rem;
-  padding-left: 1.25rem;
-}
-
-.hero-section a {
-  text-decoration: none;
-  text-align: center;
-  width: 12.5rem;
-  height: 3.125rem;
-  border-radius: 3.125rem;
-  background-color: #ffffad;
-  color: black;
-  border: none;
-  padding: 0.625rem;
-  margin: 1.875rem;
-  font-size: 1rem;
-  font-weight: bold;
-  align-self: flex-end;
-  cursor: pointer;
-  transition: background-color 0.5s ease;
-}
-.hero-section a:hover {
-  background-color: #b299d1;
-  color: black;
+  padding-bottom: 5%;
 }
 
 .hero-section-title {
-  font-size: 9.375rem;
+  height: 500px;
+  background-color: transparent;
+  text-align: center;
+  position: relative;
+}
+
+.hero-section-slider {
+  font-size: 6vw;
+  color: black;
+  position: relative;
+  top: 20%;
+  padding-right: 25%;
+}
+
+.hero-section-textbox {
+  display: inline-block;
+  position: relative;
+}
+
+.hero-section-textbox div {
+  display: inline-block;
+  position: absolute;
+  transform: rotateX(-90deg);
+  opacity: 0;
+  animation-timing-function: ease;
+}
+
+.hero-section-textbox div:nth-child(1) {
+  animation: rollDown 8s forwards infinite;
+}
+
+.hero-section-textbox div:nth-child(2) {
+  animation: rollDown2 8s forwards infinite;
+}
+
+.hero-section-textbox div:nth-child(3) {
+  animation: rollDown3 8s forwards infinite;
+}
+
+@keyframes rollDown {
+  0% {
+    top: -13vw;
+    transform: rotateX(-90deg);
+  }
+  11% {
+    top: -7.2vw;
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+  22% {
+    top: -7.2vw;
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+  33% {
+    top: 0.75vw;
+    transform: rotateX(30deg);
+    opacity: 0;
+  }
+}
+@keyframes rollDown2 {
+  33% {
+    top: -13vw;
+    transform: rotateX(-90deg);
+  }
+  44% {
+    top: -7.2vw;
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+  55% {
+    top: -7.2vw;
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+  66% {
+    top: 0.75vw;
+    transform: rotateX(30deg);
+    opacity: 0;
+  }
+}
+@keyframes rollDown3 {
+  66% {
+    top: -13vw;
+    transform: rotateX(-90deg);
+  }
+  77% {
+    top: -7.2vw;
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+  88% {
+    top: -7.2vw;
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+  99% {
+    top: 0.75vw;
+    transform: rotateX(30deg);
+    opacity: 0;
+  }
+}
+.hero-section-button {
+  color: black;
+  background-color: #ffffad;
+  height: 100%;
+  margin: 100px;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.hero-section-button:hover {
+  background-color: #ceb3f2;
+}
+
+.hero-section-title {
   font-weight: bold;
   justify-content: center;
   text-align: center;
 }
 
 .hero-section-text {
+  margin-top: 7vw;
+  padding: 5%;
   font-size: 1.25rem;
   width: 100%;
+  font-weight: normal;
 }
 
 .cards-index {
@@ -219,10 +299,10 @@ main {
   color: black;
   background-color: #ceb3f2;
   display: inline-block;
-  padding: 0.5rem 1rem;
   text-decoration: none;
   border-radius: 1.25rem;
   transition: background-color 0.3s, color 0.3s;
+  box-sizing: content-box !important;
 }
 .card-index-button:hover {
   background-color: #ffffad;
@@ -509,11 +589,6 @@ img {
 }
 
 .quienessomos-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 0px;
   background-image: url("../images/herosectionback.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -526,31 +601,31 @@ img {
 
 .quienessomos-description {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 0px;
   font-size: 1.25rem;
-  width: calc(50% - 1.2rem);
-  margin-right: 1.8rem;
   align-items: center;
   margin-top: 2%;
+  gap: 30px;
 }
 
 .quienessomos-description-title {
   font-size: 3.75rem;
   padding-bottom: 4.37rem;
+  text-align: left;
+  padding-top: 5%;
 }
 
 .quienesomos-misionvisionyvalores {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: baseline;
   align-items: center;
   gap: 0px;
   padding-top: 3.1rem;
   font-size: 1.1rem;
-  width: calc(50% - 1.25rem);
   gap: 1.5rem;
 }
 
@@ -560,8 +635,7 @@ img {
   justify-content: center;
   align-items: center;
   gap: 0px;
-  height: 8.75rem;
-  width: 80%;
+  height: 250px;
   margin-bottom: 1, 25rem;
   background-color: rgba(255, 255, 173, 0.6823529412);
   border-radius: 0.62rem;
@@ -572,17 +646,12 @@ img {
 }
 
 .quienessomos-misionvisionyvalores-card-img {
-  width: 20%;
+  width: 100px;
+  object-fit: cover;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0.93rem;
-}
-.quienessomos-misionvisionyvalores-card-img img {
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 0.62rem;
-  object-fit: cover;
 }
 
 .quienessomos-misionvisionyvalores-card-text {
@@ -593,6 +662,7 @@ img {
   gap: 0px;
   padding: 20px;
   width: 80%;
+  justify-items: center;
 }
 .quienessomos-misionvisionyvalores-card-text h2 {
   font-size: 1.25rem;
@@ -673,6 +743,13 @@ img {
   .entrada-blog-subtitle-t {
     font-size: small;
   }
+  .quienessomos-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+  }
   .quienessomos-container {
     flex-direction: column;
     align-items: center;
@@ -689,7 +766,8 @@ img {
     justify-content: center;
     align-items: center;
     gap: 0px;
-    width: 130%;
+    width: 100%;
+    padding-left: 50px;
   }
   .quienessomos-misionvisionyvalores-card {
     height: auto;
