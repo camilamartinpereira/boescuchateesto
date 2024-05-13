@@ -302,6 +302,7 @@ main {
   text-decoration: none;
   border-radius: 1.25rem;
   transition: background-color 0.3s, color 0.3s;
+  padding: 10px;
   box-sizing: content-box !important;
 }
 .card-index-button:hover {
@@ -688,6 +689,10 @@ img {
     justify-content: center;
     text-align: center;
   }
+  .hero-section-text {
+    margin-top: 40vw;
+    font-size: 1.05rem;
+  }
   .cards-index {
     flex-direction: column;
     align-items: center;
@@ -767,7 +772,6 @@ img {
     align-items: center;
     gap: 0px;
     width: 100%;
-    padding-left: 50px;
   }
   .quienessomos-misionvisionyvalores-card {
     height: auto;
